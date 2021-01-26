@@ -15,6 +15,7 @@ app.use(morgan('dev'));*/
 
 // Routes
 app.use(require('./routes/index'));
+app.use(express.static('src'));
 
 // listening the server
 app.listen(app.get('port'), () => {
