@@ -1,0 +1,18 @@
+#titlebox{
+    margin-left: 32%;
+    margin-right: 32%;
+    width: 500px;
+    height: 150px;
+    background: rgb(54, 40, 40);
+    box-shadow: 0px 0px 40px black;
+    }
+
+#titlebox h1{
+    color: black;
+    font-size: 100px;
+    text-align: center;
+    }
+
+body{
+    background: black;
+}
