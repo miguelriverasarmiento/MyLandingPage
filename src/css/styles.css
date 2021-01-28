@@ -1,17 +1,56 @@
-#titlebox{
-    margin-left: 32%;
-    margin-right: 32%;
+@font-face{
+    font-family: "blackber";
+    src: url("font/blackber.TTF");
+}
+@font-face{
+    font-family: "knight";
+    src: url("font/knight.ttf");
+}
+.port{
+    width: 100%;
+    background: rgb(29, 27, 27);
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-out all;
+
+}
+
+.titlebox{
+    margin-top: -250px;
     width: 500px;
     height: 150px;
     background: rgb(54, 40, 40);
     box-shadow: 0px 0px 40px black;
     }
 
-#titlebox h1{
+.titlebox h1{
+    font-family: "knight";
     color: black;
     font-size: 100px;
     text-align: center;
+    margin-top: 10px;
     }
+
+.release h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+.release p{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
 
 body{
     background: black;
