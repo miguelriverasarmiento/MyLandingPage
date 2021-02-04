@@ -55,3 +55,47 @@
 body{
     background: black;
 }
+
+.simply-countdown {
+    overflow: hidden;
+    display: table;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: -140px;
+  }
+  .simply-countdown > .simply-section {
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    float: left;
+    margin: 15px;
+    background: rgb(68, 10, 10);
+    box-shadow: 0 1px 3px rgba(90, 32, 32, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+  }
+  .simply-countdown > .simply-section .simply-amount,
+  .simply-countdown > .simply-section .simply-word {
+    display: block;
+    text-align: center;
+  }
+
+  footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
