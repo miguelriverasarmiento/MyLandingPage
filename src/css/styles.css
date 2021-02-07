@@ -8,13 +8,11 @@
 }
 .port{
     width: 100%;
-    background: rgb(29, 27, 27);
     min-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,8 +25,8 @@
     margin-top: -250px;
     width: 500px;
     height: 150px;
-    background: rgb(54, 40, 40);
-    box-shadow: 0px 0px 40px black;
+    
+    
     }
 
 .titlebox h1{
@@ -37,6 +35,7 @@
     font-size: 100px;
     text-align: center;
     margin-top: 10px;
+    text-shadow: 0px 0px 40px rgb(95, 64, 7);
     }
 
 .release h1{
@@ -53,7 +52,11 @@
 }
 
 body{
-    background: black;
+    background:url('img/vint.png');
+    background-repeat: no-repeat;
+    min-height:100%;
+    background-size:cover;
+    
 }
 
 .simply-countdown {
@@ -63,28 +66,17 @@ body{
     margin-bottom: -140px;
   }
   .simply-countdown > .simply-section {
-    width: 100px;
-    height: 100px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    width: 80px;
+    height: 80px;
     display: flex;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     float: left;
-    margin: 15px;
-    background: rgb(68, 10, 10);
-    box-shadow: 0 1px 3px rgba(90, 32, 32, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 15px;
+    margin: 8px;
+    background-color: rgba(182, 129, 32, 0.425);
+    box-shadow: 0 1px 3px rgb(151, 95, 10), 0 10px 10px rgba(0, 0, 0, 0.24);
+    border-radius: 12px;
+    
   }
   .simply-countdown > .simply-section .simply-amount,
   .simply-countdown > .simply-section .simply-word {
