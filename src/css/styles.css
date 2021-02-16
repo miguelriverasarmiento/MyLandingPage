@@ -84,6 +84,15 @@ body{
     text-align: center;
   }
 
+  .registro{
+      position: relative;
+      bottom: -168px;
+  }
+  .registro h3{
+      text-align: center;
+      
+  }
+
   footer{
     width: 100%;
     height: 50px;
