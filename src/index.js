@@ -1,22 +1,21 @@
 const express = require('express');
-const morgan = require('morgan');
+const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
-const mongoose = require('mongoose');
-
+const methodOverride = require("method-override");
+//var User = require('./model/user');
 // Settings
 app.set('port', 4000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(methodOverride());
+
 // connecting to db
-mongoose.connect('mongodb://localhost:27017')
-  .then(db => console.log('Db connected'))
-  .catch(err => console.log(err));
-// Middlewares
-/*app.use(express.json());
-app.use(morgan('dev'));*/
+
 
 // Routes
 app.use(require('./routes/index'));
