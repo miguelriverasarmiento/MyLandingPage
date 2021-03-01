@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
+var emailControllerPost = require('../controller/emailsController');
 
-
-router.get('/', (req, res) => {
+router.get('/', function(req, res) {
     res.render('index.html', { title: 'First web'});
   });
 
-  module.exports = router;
+router.post('/', emailControllerPost.createUser);
+
+module.exports = router;
