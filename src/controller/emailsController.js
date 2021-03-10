@@ -9,13 +9,12 @@ const pool = new Pool({
 })
 
 const createUser = (req, res) => {
-    const {email} = req.body
-
-    pool.query('INSERT INTO users (email) VALUES ($1)',  [email], (error, results) => {
+    const email = req.body.email;
+     pool.query('INSERT INTO users (email) VALUES ($1)',  [email], (error, results) => {
         if (error) {
             console.log(error)
         }
-        res.status(201).send(`User added with ID: ${results}`)
+        res.status(200).json(results.rows);
     })
 }
 
