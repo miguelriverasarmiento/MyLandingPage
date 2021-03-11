@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejs template</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     <div class="port">
@@ -19,12 +21,12 @@
 
         <div class="simply-countdown"></div>
 
-        <div class="registro">
+        <div class="registro" id="reg">
             <h3>Obtener album</h3>
             <form class="form" method="POST">
                 <p>
                     <label>Correo electronico</label>
-                    <input type="email" name="email" />
+                    <input id="email" type="email" name="email" placeholder="Ingresa tu email"/>
                     <button type="submit">Enviar</button>
                 </p>
             </form>
@@ -38,7 +40,7 @@
     
     <script src="./js/simplyCountdown.min.js"></script>
     <script src="./js/counter.js"></script>
-
+    <script src="./js/ajax.js"></script>
 </body>
 
 </html>
