@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miguelriverasarmiento/MyLandingPage.git"
